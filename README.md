@@ -1,0 +1,1 @@
+This is simply a repo to keep the functions and test code that is developed during the Udemy Javascipt the Basics Course.
