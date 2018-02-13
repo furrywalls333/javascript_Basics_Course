@@ -1,17 +1,6 @@
-var sumRange = function(num1, num2) {
-    var start = Math.min(num1, num2);
-    var end = Math.max(num1, num2);
-    var numArray = [];
-
-    for (var i = 0; i + start <= end; i++) {
-        numArray.push(i + start);
-    }
-
-    return numArray.reduce(function(acc, curr) {
-        return acc + curr;
-    });
+var findPermutation = function(str1, str2) {
+    return str1.split('').sort().join('') == str2.split('').sort().join('');
 };
 
-console.log(sumRange(2,1));
-console.log(sumRange(0,80));
-console.log(sumRange(-10,25));
+console.log(findPermutation('purple','porple'));
+console.log(findPermutation('hello','loelh'));
