@@ -1,5 +1,5 @@
 var longestWord = function(str) {
-    var strArray = str.split(' ').reduce(function(longest, current){
+    str.split(' ').reduce(function(longest, current){
         if (current.length > longest.length)
             return current;
         else
