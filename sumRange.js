@@ -1,15 +1,13 @@
 var sumRange = function(num1, num2) {
     var start = Math.min(num1, num2);
     var end = Math.max(num1, num2);
-    var numArray = [];
+    var total = 0;
 
-    for (var i = 0; i + start <= end; i++) {
-        numArray.push(i + start);
+    for (var i = start; i <= end; i++) {
+        total += i;
     }
 
-    return numArray.reduce(function(acc, curr) {
-        return acc + curr;
-    });
+    return total;
 };
 
 console.log(sumRange(2,1));
